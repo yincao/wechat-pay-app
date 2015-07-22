@@ -2,7 +2,7 @@
 /**
  * 微信支付服务器端下单
  * @author		yc	 <yincaox@gmail.com>
- *
+ * 微信APP支付文档地址:  https://pay.weixin.qq.com/wiki/doc/api/app.php?chapter=8_6
  * 使用示例
  *	$options = array(
  		'appid' 	=> 	'wx8888888888888888',		//填写微信分配的公众账号ID
@@ -10,6 +10,13 @@
 		'notify_url'=>	'http://www.baidu.com/',	//填写微信支付结果回调地址
 		'key'		=>	5K8264ILTKC''				//填写微信商户支付密钥
 	);
+	统一下单方法
+	$WechatAppPay = new WechatAppPay($options);
+	$params['body'] = '商品描述';						//商品描述
+	$params['out_trade_no'] = '1217752501201407';	//自定义的订单号
+	$params['total_fee'] = '100';					//订单金额 只能为整数 单位为分
+	$params['trade_type'] = 'APP';					//交易类型 JSAPI | NATIVE |APP | WAP 
+	$WechatAppPay->unifiedOrder( $params );
  */
 class WechatAppPay
 {	
