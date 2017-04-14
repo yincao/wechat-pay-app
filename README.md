@@ -26,6 +26,6 @@ $params['trade_type'] = 'APP';	//交易类型 JSAPI | NATIVE |APP | WAP
 //请求微信【统一下单】接口,成功会返回 预支付交易会话标识 prepay_id
 $result = $wechatAppPay->unifiedOrder( $params );
 
-//生成APP所需的预支付参数
+//生成APP端调起支付所需的参数
 $data = $wechatAppPay->getAppPayParams( $result['prepay_id'] );
 ```
