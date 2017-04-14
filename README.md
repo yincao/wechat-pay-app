@@ -1,7 +1,7 @@
 # wechat-pay-app
     微信APP支付-服务器端PHP SDK 
     精简的SDK代码,方便程序扩展使用
-    官方文档说明: [https://pay.weixin.qq.com/wiki/doc/api/app/app.php?chapter=9_1](https://pay.weixin.qq.com/wiki/doc/api/app/app.php?chapter=9_1) 
+    官方文档说明: https://pay.weixin.qq.com/wiki/doc/api/app/app.php?chapter=9_1
     微信APP支付流程: 服务器端下单 -> 生成预支付参数 -> APP通过预支付调起客户端支付
 # 使用示例
 
