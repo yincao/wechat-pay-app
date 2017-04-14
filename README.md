@@ -4,7 +4,7 @@
     官方文档说明: https://pay.weixin.qq.com/wiki/doc/api/app/app.php?chapter=9_1
     微信APP支付流程: 服务器端下单 -> 生成预支付参数 -> APP通过预支付调起客户端支付
 # 使用示例
-
+### 生成APP支付参数示例代码
 ```php
 //初始化配置参数
 $options = array(
