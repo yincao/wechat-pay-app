@@ -1,11 +1,11 @@
 # wechat-pay-app
     微信APP支付-服务器端PHP SDK 
     精简的SDK代码,方便程序扩展使用
-    官方文档说明: https://pay.weixin.qq.com/wiki/doc/api/app/app.php?chapter=9_1
+    官方文档说明: [https://pay.weixin.qq.com/wiki/doc/api/app/app.php?chapter=9_1](https://pay.weixin.qq.com/wiki/doc/api/app/app.php?chapter=9_1) 
     微信APP支付流程: 服务器端下单 -> 生成预支付参数 -> APP通过预支付调起客户端支付
 # 使用示例
-<pre>
 
+```php
 //初始化配置参数
 $options = array(
      'appid'=>'wx8888888888888888',//填写微信分配的公众账号ID
@@ -28,4 +28,4 @@ $result = $wechatAppPay->unifiedOrder( $params );
 
 //生成APP所需的预支付参数
 $data = $wechatAppPay->getAppPayParams( $result['prepay_id'] );
-</pre>
+```
